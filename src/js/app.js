@@ -6,26 +6,26 @@ document.addEventListener("DOMContentLoaded", function () {
   particlesJS('particles-js', {
     "particles": {
       "number": {
-        "value": 30,
+        "value": 100,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1000
         }
       },
       "color": {
         "value": "#ffffff"
       },
       "shape": {
-        "type": "polygon",
+        "type": "image",
         "stroke": {
-          "width": 0,
-          "color": "#000000"
+          "width": 1,
+          "color": "#880000"
         },
         "polygon": {
           "nb_sides": 5
         },
         "image": {
-          "src": "img/github.svg",
+          "src": "assets/img/snowflake.png",
           "width": 100,
           "height": 100
         }
@@ -41,17 +41,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "size": {
-        "value": 3,
+        "value": 8,
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 19.18081918081918,
-          "size_min": 0.1,
+          "speed": 1,
+          "size_min": 1,
           "sync": false
         }
       },
       "line_linked": {
-        "enable": true,
+        "enable": false,
         "distance": 150,
         "color": "#ffffff",
         "opacity": 0.4,
@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       "move": {
         "enable": true,
-        "speed": 4,
-        "direction": "none",
+        "speed": 1,
+        "direction": "bottom",
         "random": true,
         "straight": false,
         "out_mode": "out",
@@ -77,32 +77,32 @@ document.addEventListener("DOMContentLoaded", function () {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
+          "enable": true,
           "mode": "grab"
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "repulse"
         },
         "resize": true
       },
       "modes": {
         "grab": {
-          "distance": 400,
+          "distance": 200,
           "line_linked": {
-            "opacity": 1
+            "opacity": 0.75
           }
         },
         "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
+          "distance": 100,
+          "size": 15,
+          "duration": 0.5,
           "opacity": 8,
-          "speed": 3
+          "speed": 10
         },
         "repulse": {
           "distance": 200,
-          "duration": 0.4
+          "duration": 0.1
         },
         "push": {
           "particles_nb": 4
