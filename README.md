@@ -1,4 +1,4 @@
-# Particle Jekyll Theme
+# Particle Jekyll Theme Site
 
 This is my quick take at a personal website based on Jekyll and the
 [Particle Theme](https://nrandecker.github.io/particle/) by Nathan Randecke.
